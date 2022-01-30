@@ -38,7 +38,7 @@
             Parabéns, você ganhou!
           </span>
           <div>
-             <Nuxt-link v-if="nextFase" to="/" class="next-fase" >Parabéns</Nuxt-link>
+             <Nuxt-link v-if="nextFase" to="/gratulations" class="next-fase" >Avançar</Nuxt-link>
           </div>
         </li>
 
@@ -100,6 +100,7 @@ export default {
 
       outcomeOneIncorrect(){
         const btn = document.querySelectorAll('.btn-else')
+        document.getElementById('btnZero').setAttribute('disabled', 'true')
         const correct = document.getElementById('correct')
         correct.setAttribute('disabled', 'true')
         btn[1].style.backgroundColor = 'red'
@@ -111,10 +112,9 @@ export default {
       },
       
       outcomeTwoIncorrect(){
-        const btn = document.querySelectorAll('.btn-else')
         const correct = document.getElementById('correct')
         correct.setAttribute('disabled', 'true')
-        document.getElementById('btnZero').setAttribute('disabled', 'true')
+        document.getElementById('btnTree').setAttribute('disabled', 'true')
         document.getElementById('btnZero').style.backgroundColor = 'red'
         this.outcomeTwoInc = true
         this.visibleGameOverTwo()

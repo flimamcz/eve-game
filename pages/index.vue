@@ -1,5 +1,9 @@
 <template>
     <div>
+
+      <header>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+      </header>
       <header class="header-bottom">
         <div class="header">
           <div>
@@ -122,4 +126,5 @@ export default {
   font-size: 1.1rem;
   font-weight: 800;
 }
+
 </style>

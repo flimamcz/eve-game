@@ -108,6 +108,7 @@ body{
   font-size: 2.1rem;
   font-weight: 800;
   text-align: center;
+  margin-top: 30px;
 }
 
 .gratulations h2 span{

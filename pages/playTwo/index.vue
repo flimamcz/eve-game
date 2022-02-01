@@ -169,7 +169,7 @@ body{
 }
 
 .button-init-history:hover{
-    background: linear-gradient(to right, #0000FF, red);
+    background: #fa3030;
     text-decoration: none;
     color: #fff;
 }

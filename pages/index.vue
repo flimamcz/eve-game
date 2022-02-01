@@ -1,6 +1,5 @@
 <template>
     <div>
-
       <header>
         <link rel="shortcut icon" href="" type="image/x-icon">
       </header>
@@ -90,7 +89,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 64px auto 0 auto;
+    margin: 100px auto 0 auto;
     padding: 0 24px;
 }
 

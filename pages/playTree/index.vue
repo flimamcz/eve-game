@@ -291,4 +291,17 @@ body{
   height: 30px;
   border-radius: 2px;
 }
+
+@media screen and (max-width: 600px) {
+  .alternative li button {
+    font-size: 1rem;
+    width: 320px;
+    padding: 15px;
+  }
+
+  .text p {
+    font-size: 0.875rem;
+  }
+
+}
 </style>

@@ -123,4 +123,40 @@ export default {
   font-weight: 800;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 860px){
+  
+  .intro-text h1{
+    max-width: 300px;
+    font-size: 1.37rem;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  
+  .intro-text h1{
+    width: min(98%, 400px);
+    font-size: 1.6rem;
+    padding: 0 10px;
+    margin-right: 0;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  .intro{
+    max-width: 400px;
+    display: block;
+    margin: 100px auto 0 auto;
+}
+
+
+  .intro-img{
+    display: none;
+  }
+
+}
+
 </style>

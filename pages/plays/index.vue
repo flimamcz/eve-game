@@ -28,7 +28,7 @@
 
       <ul class="alternative">
         <li>
-          A - <button class="btn-else" @click="outcomeOneIncorrect" id="btnZero">Corre o mais rápido possível</button>
+          <span class="options">A</span> - <button class="btn-else" @click="outcomeOneIncorrect" id="btnZero">Corre o mais rápido possível</button>
           <span v-if="outcomeIncorrect" class="outFalseOne">A sua corrida não foi suficiente para superar a da manada. Você morreu</span>
           <div>
             <Nuxt-link v-if="visibleExit" class="button-game-over" to="./">Sair</Nuxt-link>
@@ -37,13 +37,13 @@
 
 
         <li>
-          B - <button @click="playOneCorrect" id="correct">Sobe na Arvóre</button> 
+          <span class="options">B</span> - <button @click="playOneCorrect" id="correct">Sobe na Arvóre</button> 
           <span v-if="correctPlayOne" class="outTruePlayOne">Você sobe na árvore e escapa por pouco da manada.</span>
             <Nuxt-link v-if="nextFase" to="/playTwo" class="next-fase">Próxima Fase</Nuxt-link>
           </li>
 
         <li>
-          C - <button id="btnTree" class="btn-else" @click="outcomeTwoIncorrect">Se finge de morto</button>
+          <span class="options">C</span> - <button id="btnTree" class="btn-else" @click="outcomeTwoIncorrect">Se finge de morto</button>
           <span v-if="outcomeTwoInc" class="outFalseOne">Os búfalos podem até ter acreditado, mas isso não os impediu de passar
             por cima de você. Morreu atropelado.
           </span>
@@ -277,5 +277,18 @@ body{
   height: 30px;
   border-radius: 2px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .alternative li button {
+    font-size: 1rem;
+    width: 320px;
+    padding: 15px;
+  }
+
+  .text p {
+    font-size: 0.875rem;
+  }
+
 }
 </style>

@@ -253,12 +253,11 @@ body{
     text-align: center;
 }
 
-
 .outFalseOne{
     color: red;    
     display: block;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .button-game-over{
@@ -285,5 +284,25 @@ body{
   height: 30px;
   border-radius: 2px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .alternative li button {
+    font-size: 1rem;
+    width: 320px;
+    padding: 15px;
+  }
+
+  .text p {
+    font-size: 0.875rem;
+  }
+
+  .outFalseOne{
+    color: red;    
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
 }
 </style>

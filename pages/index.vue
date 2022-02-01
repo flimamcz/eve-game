@@ -1,12 +1,9 @@
 <template>
     <div>
-      <header>
-        <link rel="shortcut icon" href="" type="image/x-icon">
-      </header>
       <header class="header-bottom">
         <div class="header">
           <div>
-            <a href="/"><img src="logo.svg" alt="" /></a>
+            <a href="#"><img src="logo.svg" alt="" /></a>
           </div>
           
           <div>

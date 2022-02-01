@@ -3,7 +3,7 @@
     <header class="header-bottom">
       <div class="header">
         <div>
-          <a href="/"><img src="logo.svg" alt="" /></a>
+          <a href="/"><img src="logo.svg" alt="logo" /></a>
         </div>
 
         <div>
